@@ -1,222 +1,53 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Synthos Consulting | Strategic Vanguard</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --midnight-blue: #0A192F;
-            --electric-cyan: #00FFF0;
-            --foundry-grey: #4A4A4A;
-            --light-grey: #F5F5F5;
+        body { font-family: 'Inter', sans-serif; }
+        .glass { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); }
+        .gradient-text {
+            background: linear-gradient(90deg, #0f172a, #334155);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
-        body {
-            font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-            color: var(--midnight-blue);
-            margin: 0;
-            background-color: #ffffff;
-        }
-        header {
-            background-color: var(--midnight-blue);
-            color: white;
-            padding: 4rem 2rem;
-            text-align: center;
-            border-bottom: 4px solid var(--electric-cyan);
-        }
-        .container {
-            max-width: 1100px;
-            margin: auto;
-            padding: 2rem;
-        }
-        h1, h2, h3 {
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-        .vision-mission {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-            margin-bottom: 4rem;
-        }
-        .card {
-            background: var(--light-grey);
-            padding: 2rem;
-            border-left: 5px solid var(--midnight-blue);
-        }
-        .pillars {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
-            margin-bottom: 4rem;
-        }
-        .pillar-item {
-            text-align: center;
-            padding: 1rem;
-            border: 1px solid #ddd;
-        }
-        .pillar-item strong {
-            display: block;
-            color: var(--electric-cyan);
-            background: var(--midnight-blue);
-            padding: 0.5rem;
-            margin-bottom: 1rem;
-        }
-        .services {
-            margin-bottom: 4rem;
-        }
-        .service-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-        }
-        .service-category h3 {
-            color: var(--midnight-blue);
-            border-bottom: 2px solid var(--foundry-grey);
-            padding-bottom: 0.5rem;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 2rem;
-        }
-        th {
-            background-color: var(--midnight-blue);
-            color: var(--electric-cyan);
-            padding: 1rem;
-        }
-        td {
-            padding: 1rem;
-            border: 1px solid #ddd;
-            vertical-align: top;
-        }
-        footer {
-            background: var(--foundry-grey);
-            color: white;
-            text-align: center;
-            padding: 2rem;
-            margin-top: 4rem;
-        }
-        .accent { color: var(--electric-cyan); }
     </style>
 </head>
-<body>
+<body class="bg-slate-50 text-slate-900 selection:bg-cyan-100">
 
-<header>
-    <h1>Synthos Consulting</h1>
-    [cite_start]<p><em>Architecting the AI Ethos [cite: 67]</em></p>
-</header>
-
-<div class="container">
-    <section class="vision-mission">
-        <div class="card">
-            <h2>The Vision</h2>
-            [cite_start]<p>"To serve as the <strong>Strategic Vanguard</strong> in architecting a future where human ingenuity and synthetic intelligence converge to ignite the next era of business performance within ethical, evolving ecosystems." [cite: 3]</p>
+    <nav class="sticky top-0 z-50 border-b border-slate-200 glass">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <span class="text-xl font-bold tracking-tighter text-slate-900">SYNTHOS<span class="text-cyan-500">.</span></span>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                <a href="#vision" class="hover:text-cyan-600 transition-colors">Vision</a>
+                <a href="#services" class="hover:text-cyan-600 transition-colors">Services</a>
+                <a href="#engagement" class="hover:text-cyan-600 transition-colors">Engagement</a>
+            </div>
+            <button class="bg-slate-900 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-slate-800 transition-all shadow-sm">
+                Get Started
+            </button>
         </div>
-        <div class="card">
-            <h2>The Mission</h2>
-            [cite_start]<p>"We bridge the gap between legacy operations and the autonomous future. By synthesizing high-level strategy with the ethical application of AI, we transform the workforce and technology stack into a unified, high-velocity engine for growth." [cite: 5]</p>
-        </div>
-    </section>
+    </nav>
 
-    <section>
-        <center><h2>Core Pillars (The Synthos Ethos)</h2></center>
-        <div class="pillars">
-            <div class="pillar-item">
-                <strong>Architectural Foresight</strong>
-                [cite_start]<p>Designing structural integrity for an AI-native world. [cite: 7]</p>
+    <header class="relative pt-20 pb-16 px-6 overflow-hidden">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="inline-block px-3 py-1 mb-6 text-xs font-semibold tracking-wider text-cyan-700 uppercase bg-cyan-50 rounded-full border border-cyan-100">
+                Now Entering the AI-Native Era
             </div>
-            <div class="pillar-item">
-                <strong>Ingenuity Synthesis</strong>
-                [cite_start]<p>Optimizing the "Collaborative Quotient" of human and machine. [cite: 8]</p>
-            </div>
-            <div class="pillar-item">
-                <strong>Ethical Evolution</strong>
-                [cite_start]<p>Ensuring autonomous systems remain aligned with human values. [cite: 9]</p>
-            </div>
-            <div class="pillar-item">
-                <strong>Performance Ignition</strong>
-                [cite_start]<p>Measurable acceleration of business outcomes. [cite: 10]</p>
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 gradient-text">
+                The Strategic Vanguard for AI Synthesis.
+            </h1>
+            <p class="text-xl text-slate-600 mb-10 leading-relaxed max-w-2xl mx-auto">
+                Architecting the future where human ingenuity and synthetic intelligence converge to ignite the next era of business performance.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <button class="bg-slate-900 text-white px-8 py-3 rounded-lg font-medium hover:ring-2 hover:ring-slate-900 hover:ring-offset-2 transition-all">Explore Services</button>
+                <button class="bg-white border border-slate-200 px-8 py-3 rounded-lg font-medium hover:bg-slate-50 transition-all shadow-sm">View Methodology</button>
             </div>
         </div>
-    </section>
+    </header>
 
-    <section class="services">
-        <h2>Our Services</h2>
-        <div class="service-grid">
-            <div class="service-category">
-                <h3>1. The Vanguard Strategy</h3>
-                <ul>
-                    [cite_start]<li>Future-State Architecture [cite: 21]</li>
-                    [cite_start]<li>Ethical AI Governance [cite: 22]</li>
-                    [cite_start]<li>Opportunity Mapping [cite: 23]</li>
-                </ul>
-            </div>
-            <div class="service-category">
-                <h3>2. The Synthesis Engine</h3>
-                <ul>
-                    [cite_start]<li>Ingenuity Integration [cite: 27]</li>
-                    [cite_start]<li>Operational Syntheticism [cite: 28]</li>
-                    [cite_start]<li>Cognitive Onboarding [cite: 29]</li>
-                </ul>
-            </div>
-            <div class="service-category">
-                <h3>3. Performance Ignition</h3>
-                <ul>
-                    [cite_start]<li>The Velocity Dashboard [cite: 33]</li>
-                    [cite_start]<li>Predictive Performance Modeling [cite: 34]</li>
-                    [cite_start]<li>Human-Machine Synergy Score [cite: 35]</li>
-                </ul>
-            </div>
-            <div class="service-category">
-                <h3>4. Ecosystem Autonomy</h3>
-                <ul>
-                    [cite_start]<li>Interconnected Automation [cite: 39]</li>
-                    [cite_start]<li>API & Neural Fabric Design [cite: 40]</li>
-                    [cite_start]<li>Self-Healing Workflows [cite: 41]</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <h2>Engagement Models</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>The Ignition Sprint</th>
-                    <th>The Vanguard Retainer</th>
-                    <th>The Ecosystem Overhaul</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    [cite_start]<td><strong>Duration:</strong> 4–6 Weeks [cite: 44]</td>
-                    [cite_start]<td><strong>Duration:</strong> 12 Months+ [cite: 44]</td>
-                    [cite_start]<td><strong>Duration:</strong> Project-Based [cite: 44]</td>
-                </tr>
-                <tr>
-                    [cite_start]<td>Rapid identification of AI opportunities and roadmap. [cite: 44]</td>
-                    [cite_start]<td>Continuous strategic advisory and optimization. [cite: 44]</td>
-                    [cite_start]<td>Full-scale rebuild of tech, workforce, and automation. [cite: 44]</td>
-                </tr>
-                <tr>
-                    [cite_start]<td><em>Best for: Discovery</em> [cite: 44]</td>
-                    [cite_start]<td><em>Best for: Growth & Scale</em> [cite: 44]</td>
-                    [cite_start]<td><em>Best for: Radical Transformation</em> [cite: 44]</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-</div>
-
-<footer>
-    <p><strong>Synthos Consulting: The Strategic Vanguard</strong></p>
-    [cite_start]<p>Ignite the next era of your company's performance. [cite: 12]</p>
-</footer>
-
-</body>
-</html>
+    <main class="max
